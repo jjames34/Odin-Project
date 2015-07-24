@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jerry's pixel drawer</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="script.css"/>
+		<script>
+		var isClean = true;
+		var width = 20;
+		var height = 20;
+		function populateWidth(width) {
+		 var $div = $("div div");
+  		for(var i = 0; i < 400/width; i++){	
+			$div.after("<div></div>");
+			}
+		}
+		function populateHeight(height){
+		var $div2 = $("div div");
+  		for(var i = 0; i < height/2; i++){	
+			$div2.append("<div></div>");
+			}
+		}
+$(document).ready(function(){
+	populateWidth(width);
+	populateHeight(height); 
+$("div div").hover(function(){
+	if (this)
+	$(this).css("background-color","red");
+});
+
+});
+</script>
+
+</head>
+<body>
+	<div id="main">
+		<div id="body"></div>
+	</div>
+</body>
+</html>

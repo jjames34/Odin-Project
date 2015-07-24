@@ -1,0 +1,14 @@
+div {
+	height: 20px;
+	width: 20px;
+	border: 2px solid black;
+	margin: 0px;
+	display: inline-block;
+
+}
+button {
+	position: relative;
+	margin-top: 20px;
+}
+
+
