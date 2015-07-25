@@ -56,7 +56,7 @@ class Dungeon
 	Room = Struct.new(:reference, :name, :description, :connections)
 end
 
-my_dungeon = Dungeon.new("Jerry")
+my_dungeon = Dungeon.new("John")
 my_dungeon.add_room(:largecave, "Large Cave", "a large and cavernous cave", {:west => :smallcave})
 
 my_dungeon.add_room(:smallcave,"Small Cave", "A small and damp cave", {:east => :largecave})
